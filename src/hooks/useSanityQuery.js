@@ -7,7 +7,6 @@ export const useSanityQuery = (type) => {
   const [filterWork, setFilterWork] = useState([]);
   const [skills, setSkills] = useState([]);
   const [experiences, setExperiences] = useState([]);
-  const [currentIndex, setCurrentIndex] = useState(0);
   const [testimonials, setTestimonials] = useState([]);
 
   useEffect(() => {
@@ -41,7 +40,7 @@ export const useSanityQuery = (type) => {
           break;
       }
     });
-  }, []);
+  }, [type]);
 
   const triggerFilter = (item) => {
     if (item === 'All') {
