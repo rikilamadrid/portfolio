@@ -11,7 +11,6 @@ const navItems = [
   'about',
   'work',
   'skills',
-  'testimonials',
   'contact',
 ];
 
@@ -33,12 +32,12 @@ const Navbar = () => {
       </ul>
 
       <div className="app__navbar-menu">
-        <HiMenuAlt4 onClick={() => setToggle(true)} />
+        <HiMenuAlt4 onClick={() => { console.log('hola? toggle', toggle); setToggle(true)}} />
 
         {toggle && (
           <motion.div
-            whileInView={{x: [400, 0]}}
-            transition={{ duration: 1, ease: 'easeInOut'}}
+            whileInView={{x: [300, 0]}}
+            transition={{ duration: 1, ease: 'easeIn'}}
           >
             <HiX onClick={() => setToggle(false)} />
             <ul>
