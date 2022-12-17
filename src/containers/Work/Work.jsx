@@ -27,7 +27,7 @@ const Work = () => {
 
   return (
     <>
-      <h2 className="head-text">My Creative <span>Portfolio</span> Section</h2>
+      <h2 className="head-text"><span>Portfolio</span></h2>
 
       <div className="app__work-filter">
         {['React Query', 'NEXTjs', 'Framer Motion', 'React', 'All'].map((item, index) => (

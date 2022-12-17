@@ -69,7 +69,7 @@
       transition: background 0.1s, color 0.1s;
       background: linear-gradient(145deg, #ffffff, #dcdcdc);
       box-shadow:  3px 3px 5px #bebebe,
-                -3px -3px 5px #ffffff;
+                  -3px -3px 5px #ffffff;
 
       &:hover {
         background: linear-gradient(145deg, #f4f4f4, #cecece);
@@ -89,90 +89,48 @@
 }
 
 .app__navbar-menu {
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  position: relative;
+  width: 90%;
+  max-width: 50rem;
+  min-height: 5rem;
+  margin: auto;
+  padding: 2em 3em;
+  border-radius: 5rem;
+  position: absolute;
+  top: 88vh;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 500ms ease-in-out;
+  z-index: 1000;
+  background: linear-gradient(145deg, #ffffff, #dcdcdc);
+  box-shadow:  3px 3px 5px #bebebe,
+            -3px -3px 5px #ffffff;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-      background: linear-gradient(145deg, #ffffff, #dcdcdc);
-      box-shadow:  3px 3px 5px #bebebe,
-                -3px -3px 5px #ffffff;
-
-
-  svg {
-    width: 70%;
-    height: 70%;
-    color: var(--secondary-color);
-  }
-
-  div {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 5;
-
-    padding: 1rem;
-
-    width: 80%;
-    height: 100vh;
-    
+  ul {
+    list-style: none;
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    flex-direction: column;
-    
-    background: url('../../assets/bgWhite.png');
-    background-color: var(--white-color);
-    background-size: cover;
-    background-repeat: repeat;
+    justify-content: space-between;
+    align-items: center;
 
-    /* top box shadow */
-    box-shadow: 0px 0px 20px rgba(168, 168, 168, 0.15);
+    li {
+      text-align: center;
 
-    svg {
-      width: 35px;
-      height: 35px;
-      color: var(--secondary-color);
-      margin: 0.5rem 1rem;
-    }
+      a {
+        color: var(--gray-color);
+        text-decoration: none;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        font-weight: 500;
 
-    ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      width: 100%;
+        transition: all 0.3s ease-in-out;
 
-      display: flex;
-      justify-content: flex-start;
-      align-items: flex-start;
-      flex-direction: column;
+        &:hover {
+          color: var(--secondary-color);
 
-      li {
-        margin: 1rem;
-
-        a {
-          color: var(--gray-color);
-          text-decoration: none;
-          font-size: 1rem;
-          text-transform: uppercase;
-          font-weight: 500;
-
-          transition: all 0.3s ease-in-out;
-
-          &:hover {
-            color: var(--secondary-color);
+          p {
+            font-size: small;
           }
         }
       }
-    }
-
-    @media screen and (min-width: 900px) {
-      display: none;
     }
   }
 

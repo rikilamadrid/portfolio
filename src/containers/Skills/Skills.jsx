@@ -12,10 +12,10 @@ const Skills = () => {
 
   return (
     <>
-      <h2 className="head-text">Skills & Experiences</h2>
+      <h2 className="head-text">Experience</h2>
 
       <div className="app__skills-container">
-        <motion.div className="app__skills-list">
+        {/* <motion.div className="app__skills-list">
           {skills.map((skill) => (
             <motion.div
               whileInView={{ opacity: [0, 1] }}
@@ -32,7 +32,7 @@ const Skills = () => {
               <p className="p-text">{skill.name}</p>
             </motion.div>
           ))}
-        </motion.div>
+        </motion.div> */}
         <div className="app__skills-exp">
           {experiences.map((experience) => (
             <motion.div
@@ -77,6 +77,6 @@ const Skills = () => {
 
 export default AppWrap(
   MotionWrap(Skills, 'app__skills'),
-  'skills',
+  'expierence',
   'app__whitebg',
 );

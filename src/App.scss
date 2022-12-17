@@ -106,18 +106,19 @@
   padding: 1rem;
 
   a {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     background-color: var(--white-color);
     margin: 0.25rem 0;
-    border: 1px solid var(--lightGray-color);
 
     display: flex;
     justify-content: center;
     align-items: center;
 
     transition: all 0.3s ease-in-out;
+    background: linear-gradient(145deg, #ffffff, #dcdcdc);
+    box-shadow: 3px 3px 5px #bebebe, -3px -3px 5px #ffffff;
 
     svg {
       width: 15px;
