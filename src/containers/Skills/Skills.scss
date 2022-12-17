@@ -2,7 +2,10 @@
   flex: 1;
   width: 100%;
   flex-direction: column;
-  margin-top: 8rem;
+
+  @media screen and (max-width: 900px) {
+    margin-top: 6rem;
+  }
 }
 
 .app__skills-container {

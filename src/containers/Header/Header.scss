@@ -62,12 +62,24 @@
   .badge-cmp,
   .tag-cmp {
     padding: 1rem 2rem;
-    background: var(--white-color);
+    // background: var(--white-color);
     border-radius: 15px;
     flex-direction: row;
     width: auto;
 
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    // box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+
+
+    // Neuphormism style
+    background: #ecf0f3;
+    box-shadow: -3px -3px 7px #ffffff,
+                3px 3px 5px #ceced1,
+                inset -3px -3px 7px #ffffff,
+                inset 3px 3px 5px #ceced1;
+
+    p, h1 {
+      color: #b9b8b9;
+    }
   }
 
   .tag-cmp {

@@ -25,7 +25,7 @@ const Header = () => (
     >
       <div className="app__header-badge">
         <div className="badge-cmp app__flex">
-          <span>👋</span>
+          <span>✌️</span>
           <div style={{ marginLeft: 20 }}>
             <p className="p-text">Hello, I am</p>
             <h1 className="head-text">Ricardo</h1>
@@ -34,7 +34,7 @@ const Header = () => (
 
         <div className="tag-cmp app__flex">
           <p className="p-text">Web Developer</p>
-          <p className="p-text">Freelancer</p>
+          <p className="p-text">UX/UI</p>
         </div>
       </div>
     </motion.div>
