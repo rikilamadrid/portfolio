@@ -33,6 +33,22 @@ const Footer = () => {
         setIsFormSubmitted(true);
       })
       .catch((err) => console.log(err));
+
+  fetch("https://formsubmit.co/ajax/hello@ricardolamadrid.com", {
+    method: "POST",
+    headers: { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+    },
+    body: JSON.stringify({
+        name: contact.name,
+        message: contact.message,
+        email: contact.email
+    })
+  })
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.log(error));
   };
 
   return (
